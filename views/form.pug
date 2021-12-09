@@ -5,8 +5,8 @@ block content
   form(method="POST", action="/new")
     .mb-3
         label(for="author").form-label Author:
-        input(type="text", id="author", name="author").form-control
+        input(type="text", id="author", name="author", required).form-control
     .mb-3
         label(for="message").form-label Message:
-        input(type="text", id="message", name="message").form-control
+        input(type="text", id="message", name="message", required).form-control
     button.btn.btn-primary Submit

@@ -11,5 +11,5 @@ block content
           = message.text
           p.fst-italic.date= message.added
   br
-  a(href=`http://localhost:${process.env.PORT || 3000}/new`) 
+  a(href="/new") 
     button.btn.btn-primary Add New Message

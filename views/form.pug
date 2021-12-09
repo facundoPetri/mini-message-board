@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h3 Add New Message
+  form(method="POST", action="/new")
+    .mb-3
+        label(for="author").form-label Author:
+        input(type="text", id="author", name="author").form-control
+    .mb-3
+        label(for="message").form-label Message:
+        input(type="text", id="message", name="message").form-control
+    button.btn.btn-primary Submit

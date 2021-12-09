@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul.list-group
+    each message in messages
+      li.list-group-item.d-flex.justify-content-between.align-items-start
+        .ms-2.me-auto
+          .fw-bold= message.user
+          = message.text
+          p.fst-italic.date= message.added
+  br
+  a(href=`http://localhost:${process.env.PORT || 3000}/new`) 
+    button.btn.btn-primary Add New Message
